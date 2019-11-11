@@ -1,0 +1,31 @@
+body {
+	background-color: #F0F1F5;
+	font-family: 'Droid Arabic Kufi';
+	text-align: right;
+	color: #343434;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.uni-icon {
+	width: 18px;
+}
+
+.list-unstyled {
+	padding: 0;
+}
+
+
+/*------------- loading-spinner -----------------*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199.98px) {}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991.98px) {}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767.98px) {}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 575.98px) {}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {}

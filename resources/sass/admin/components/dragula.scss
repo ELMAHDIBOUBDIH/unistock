@@ -1,0 +1,37 @@
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # Dragula - drag and drop library
+ *
+ *  Styles for Dragula Drag and drop plugin
+ *
+ * ---------------------------------------------------------------------------- */
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: 0.8; }
+
+.gu-unselectable.dropdown-menu li:nth-last-child(2) {
+  margin-bottom: 0; }
+
+.nav-pills-toolbar > li.gu-mirror:not(.active) > a {
+  border: 0; }
+
+.gu-hide {
+  display: none !important; }
+
+.gu-unselectable {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+.gu-transit {
+  opacity: 0.5; }
+
+.dragula-handle {
+  color: #999;
+  cursor: pointer; }
+  .dragula-handle:hover, .dragula-handle:focus {
+    color: #333; }

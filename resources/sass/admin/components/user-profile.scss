@@ -1,0 +1,38 @@
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # User profile
+ *
+ *  Styles for all user profile layouts
+ *
+ * ---------------------------------------------------------------------------- */
+.profile-cover {
+  position: relative; }
+  .profile-cover .media {
+    position: absolute;
+    left: 1.25rem;
+    right: 1.25rem;
+    bottom: 50%;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%); }
+    .profile-cover .media .btn {
+      box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.5) !important; }
+    @media (min-width: 768px) {
+      .profile-cover .media {
+        bottom: 1.25rem;
+        -webkit-transform: none;
+                transform: none; } }
+  .profile-cover .media-body {
+    text-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.5); }
+
+.profile-cover-img {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 21.88rem; }
+
+.profile-thumb img {
+  border: 3px solid #fff;
+  box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.5);
+  width: 6.25rem;
+  height: 6.25rem; }

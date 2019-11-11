@@ -1,0 +1,211 @@
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # Ladda progress buttons
+ *
+ *  Styles for ladda.min.js - buttons with built-in loading indicators
+ *
+ * ---------------------------------------------------------------------------- */
+.btn-ladda,
+.btn-ladda .ladda-spinner,
+.btn-ladda .ladda-label {
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s; }
+  @media screen and (prefers-reduced-motion: reduce) {
+    .btn-ladda,
+    .btn-ladda .ladda-spinner,
+    .btn-ladda .ladda-label {
+      transition: none; } }
+
+.btn-ladda .ladda-spinner {
+  position: absolute;
+  z-index: 2;
+  display: inline-block;
+  top: 50%;
+  pointer-events: none;
+  opacity: 0; }
+
+.btn-ladda .ladda-label {
+  z-index: 3; }
+
+.btn-ladda .ladda-progress {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  visibility: hidden;
+  opacity: 0;
+  transition: all linear 0.3s; }
+  @media screen and (prefers-reduced-motion: reduce) {
+    .btn-ladda .ladda-progress {
+      transition: none; } }
+
+.btn-ladda[data-loading] .ladda-progress {
+  visibility: visible;
+  opacity: 1; }
+
+.btn-ladda[data-style=zoom-in], .btn-ladda[data-style=zoom-out] {
+  overflow: hidden; }
+  .btn-ladda[data-style=zoom-in],
+  .btn-ladda[data-style=zoom-in] .ladda-spinner,
+  .btn-ladda[data-style=zoom-in] .ladda-label, .btn-ladda[data-style=zoom-out],
+  .btn-ladda[data-style=zoom-out] .ladda-spinner,
+  .btn-ladda[data-style=zoom-out] .ladda-label {
+    transition: 0.3s ease all; }
+    @media screen and (prefers-reduced-motion: reduce) {
+      .btn-ladda[data-style=zoom-in],
+      .btn-ladda[data-style=zoom-in] .ladda-spinner,
+      .btn-ladda[data-style=zoom-in] .ladda-label, .btn-ladda[data-style=zoom-out],
+      .btn-ladda[data-style=zoom-out] .ladda-spinner,
+      .btn-ladda[data-style=zoom-out] .ladda-label {
+        transition: none; } }
+  .btn-ladda[data-style=zoom-in] .ladda-label, .btn-ladda[data-style=zoom-out] .ladda-label {
+    position: relative;
+    display: inline-block; }
+  .btn-ladda[data-style=zoom-in] .ladda-spinner, .btn-ladda[data-style=zoom-out] .ladda-spinner {
+    left: 50%; }
+  .btn-ladda[data-style=zoom-in][data-loading] .ladda-label, .btn-ladda[data-style=zoom-out][data-loading] .ladda-label {
+    opacity: 0; }
+  .btn-ladda[data-style=zoom-in][data-loading] .ladda-spinner, .btn-ladda[data-style=zoom-out][data-loading] .ladda-spinner {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1; }
+
+.btn-ladda[data-style=zoom-in] .ladda-spinner {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2); }
+
+.btn-ladda[data-style=zoom-in][data-loading] .ladda-label {
+  -webkit-transform: scale(2.2);
+          transform: scale(2.2); }
+
+.btn-ladda[data-style=zoom-out] .ladda-spinner {
+  -webkit-transform: scale(2.5);
+          transform: scale(2.5); }
+
+.btn-ladda[data-style=zoom-out][data-loading] .ladda-label {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5); }
+
+.btn-ladda[data-style=expand-left] {
+  overflow: hidden; }
+  .btn-ladda[data-style=expand-left] .ladda-spinner {
+    left: 20px; }
+  .btn-ladda[data-style=expand-left][data-loading] {
+    padding-left: 35px; }
+    .btn-ladda[data-style=expand-left][data-loading] .ladda-spinner {
+      opacity: 1; }
+
+.btn-ladda[data-style=expand-right] {
+  overflow: hidden; }
+  .btn-ladda[data-style=expand-right] .ladda-spinner {
+    right: 20px; }
+  .btn-ladda[data-style=expand-right][data-loading] {
+    padding-right: 35px; }
+    .btn-ladda[data-style=expand-right][data-loading] .ladda-spinner {
+      opacity: 1; }
+
+.btn-ladda[data-style=expand-up] {
+  overflow: hidden; }
+  .btn-ladda[data-style=expand-up] .ladda-spinner {
+    top: -16px;
+    left: 50%; }
+  .btn-ladda[data-style=expand-up][data-loading] {
+    padding-top: 40px; }
+    .btn-ladda[data-style=expand-up][data-loading] .ladda-spinner {
+      top: 12px;
+      margin-top: 8px;
+      opacity: 1; }
+
+.btn-ladda[data-style=expand-down] {
+  overflow: hidden; }
+  .btn-ladda[data-style=expand-down] .ladda-spinner {
+    top: 44px;
+    left: 50%; }
+  .btn-ladda[data-style=expand-down][data-loading] {
+    padding-bottom: 40px; }
+    .btn-ladda[data-style=expand-down][data-loading] .ladda-spinner {
+      opacity: 1; }
+
+.btn-ladda[data-style=slide-left] {
+  overflow: hidden; }
+  .btn-ladda[data-style=slide-left] .ladda-label {
+    left: 0;
+    position: relative; }
+  .btn-ladda[data-style=slide-left] .ladda-spinner {
+    right: 0; }
+  .btn-ladda[data-style=slide-left][data-loading] .ladda-label {
+    left: -100%;
+    opacity: 0; }
+  .btn-ladda[data-style=slide-left][data-loading] .ladda-spinner {
+    right: 50%;
+    opacity: 1; }
+
+.btn-ladda[data-style=slide-right] {
+  overflow: hidden; }
+  .btn-ladda[data-style=slide-right] .ladda-label {
+    right: 0;
+    position: relative; }
+  .btn-ladda[data-style=slide-right] .ladda-spinner {
+    left: 0; }
+  .btn-ladda[data-style=slide-right][data-loading] .ladda-label {
+    right: -100%;
+    opacity: 0; }
+  .btn-ladda[data-style=slide-right][data-loading] .ladda-spinner {
+    left: 50%;
+    opacity: 1; }
+
+.btn-ladda[data-style=slide-up] {
+  overflow: hidden; }
+  .btn-ladda[data-style=slide-up] .ladda-label {
+    top: 0;
+    position: relative; }
+  .btn-ladda[data-style=slide-up] .ladda-spinner {
+    top: 100%;
+    left: 50%; }
+  .btn-ladda[data-style=slide-up][data-loading] .ladda-label {
+    top: -16px;
+    opacity: 0; }
+  .btn-ladda[data-style=slide-up][data-loading] .ladda-spinner {
+    top: 16px;
+    opacity: 1; }
+
+.btn-ladda[data-style=slide-down] {
+  overflow: hidden; }
+  .btn-ladda[data-style=slide-down] .ladda-label {
+    top: 0;
+    position: relative; }
+  .btn-ladda[data-style=slide-down] .ladda-spinner {
+    top: -100%;
+    left: 50%; }
+  .btn-ladda[data-style=slide-down][data-loading] .ladda-label {
+    top: 16px;
+    opacity: 0; }
+  .btn-ladda[data-style=slide-down][data-loading] .ladda-spinner {
+    top: 16px;
+    opacity: 1; }
+
+.btn-ladda[data-style=fade] {
+  overflow: hidden; }
+  .btn-ladda[data-style=fade] .ladda-spinner {
+    left: 50%; }
+  .btn-ladda[data-style=fade][data-loading] .ladda-label {
+    opacity: 0; }
+  .btn-ladda[data-style=fade][data-loading] .ladda-spinner {
+    opacity: 1; }
+
+.btn-ladda[data-style=radius] {
+  overflow: hidden;
+  transition: all ease-in-out 0.5s; }
+  @media screen and (prefers-reduced-motion: reduce) {
+    .btn-ladda[data-style=radius] {
+      transition: none; } }
+  .btn-ladda[data-style=radius] .ladda-spinner {
+    left: 50%; }
+  .btn-ladda[data-style=radius][data-loading] {
+    border-radius: 100px; }
+    .btn-ladda[data-style=radius][data-loading] .ladda-label {
+      opacity: 0; }
+    .btn-ladda[data-style=radius][data-loading] .ladda-spinner {
+      opacity: 1; }

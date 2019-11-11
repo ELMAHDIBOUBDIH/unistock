@@ -1,0 +1,80 @@
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # Switchery
+ *
+ *  Styles for switchery.min.js - toggle switches
+ *
+ * ---------------------------------------------------------------------------- */
+.switchery {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  display: block;
+  line-height: 1;
+  width: 2.25rem;
+  height: 1.125rem;
+  position: relative;
+  box-sizing: content-box;
+  border-radius: 100px; }
+  .form-check-switchery .switchery {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0.00002rem; }
+  .form-check-switchery.disabled .switchery {
+    cursor: default; }
+  .switchery > small {
+    background-color: #fff;
+    width: 1.125rem;
+    height: 1.125rem;
+    position: absolute;
+    top: 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    border-radius: 100px; }
+
+.form-check-switchery:not(.dropdown-item) {
+  padding-left: 3rem; }
+
+.form-check-switchery:not(.dropdown-item).form-check-right {
+  padding-left: 0;
+  padding-right: 3rem; }
+  .form-check-switchery:not(.dropdown-item).form-check-right .switchery {
+    left: auto;
+    right: 0; }
+
+.form-check-switchery-double.form-check-switchery {
+  padding-left: 0;
+  padding-right: 0; }
+  .form-check-switchery-double.form-check-switchery .switchery {
+    margin-top: 0; }
+
+.form-check-switchery-double .form-check-label {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.form-check-switchery-double .switchery {
+  position: relative;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem; }
+
+.form-check-switchery-double input {
+  margin-left: 0.625rem;
+  margin-right: 0.625rem; }
+
+.dropdown-item.form-check-switchery .form-check-label {
+  padding-left: 4.875rem; }
+
+.dropdown-item.form-check-switchery .switchery {
+  top: 50%;
+  left: 1.25rem;
+  margin-top: -0.625rem; }
+
+.dropdown-item.form-check-right.form-check-switchery .form-check-label {
+  padding-right: 4.875rem; }
+
+.dropdown-item.form-check-right.form-check-switchery .switchery {
+  left: auto;
+  right: 1.25rem; }

@@ -1,0 +1,14 @@
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # Boxed layout
+ *
+ * ---------------------------------------------------------------------------- */
+.layout-boxed-bg {
+  background: url(../../../../../../global_assets/images/backgrounds/boxed_bg.png) repeat; }
+
+.navbar > .container,
+.page-header > .container,
+.breadcrumb-line > .container {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem; }

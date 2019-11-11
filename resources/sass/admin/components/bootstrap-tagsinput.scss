@@ -1,0 +1,75 @@
+
+/* ------------------------------------------------------------------------------
+*
+*  # Bootstrap tags input
+*
+*  Styles for tagsinput.js - tags input for Bootstrap
+*
+* ---------------------------------------------------------------------------- */
+.bootstrap-tagsinput {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%; }
+  .bootstrap-tagsinput input {
+    direction: ltr;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    padding: 0.5rem 0;
+    margin-top: 0.0625rem;
+    margin-bottom: 0.0625rem;
+    width: auto !important;
+    max-width: 50%;
+    min-width: 4rem;
+    box-shadow: none; }
+  .input-group .bootstrap-tagsinput {
+    width: 1%;
+    -ms-flex: 1 1 auto;
+        flex: 1 1 auto; }
+  .bootstrap-tagsinput .twitter-typeahead {
+    width: auto; }
+  .bootstrap-tagsinput .tt-dropdown-menu {
+    margin-top: 0.1875rem;
+    min-width: 11.25rem; }
+  .bootstrap-tagsinput .tag {
+    margin-right: 0.625rem;
+    padding: 0.5rem 1rem;
+    padding-right: 2.5rem;
+    float: left;
+    position: relative;
+    border-radius: 100px;
+    transition: all ease-in-out 0.15s; }
+    @media screen and (prefers-reduced-motion: reduce) {
+      .bootstrap-tagsinput .tag {
+        transition: none; } }
+    .bootstrap-tagsinput .tag:not([class*=bg-]) {
+      background-color: #eee;
+      color: #333; }
+      .bootstrap-tagsinput .tag:not([class*=bg-]):hover, .bootstrap-tagsinput .tag:not([class*=bg-]):focus {
+        background-color: #03A9F4;
+        color: #fff; }
+    .bootstrap-tagsinput .tag,
+    .bootstrap-tagsinput .tag input {
+      margin-top: 0.0625rem;
+      margin-bottom: 0.0625rem; }
+    .bootstrap-tagsinput .tag [data-role="remove"] {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      right: 1rem;
+      line-height: 1;
+      margin-top: -0.34375rem;
+      opacity: 0.7;
+      transition: opacity ease-in-out 0.15s; }
+      @media screen and (prefers-reduced-motion: reduce) {
+        .bootstrap-tagsinput .tag [data-role="remove"] {
+          transition: none; } }
+      .bootstrap-tagsinput .tag [data-role="remove"]:hover {
+        opacity: 1; }
+      .bootstrap-tagsinput .tag [data-role="remove"]:after {
+        content: '\ed6a';
+        font-family: "icomoon";
+        display: block;
+        font-size: 0.6875rem;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }

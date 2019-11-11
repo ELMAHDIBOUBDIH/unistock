@@ -1,0 +1,30 @@
+
+/* ------------------------------------------------------------------------------
+*
+*  # Touchspin spinners
+*
+*  Styles for touchspin.min.js - spinner form control library
+*
+* ---------------------------------------------------------------------------- */
+.bootstrap-touchspin .input-group-btn-vertical {
+  white-space: nowrap; }
+  .bootstrap-touchspin .input-group-btn-vertical > .btn {
+    width: 2.375rem;
+    margin-left: -1px;
+    border-radius: 0; }
+  .bootstrap-touchspin .input-group-btn-vertical i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -0.5rem;
+    margin-top: -0.5rem;
+    font-weight: normal; }
+  .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down {
+    border-top-right-radius: 0.1875rem;
+    border-bottom-right-radius: 0.1875rem; }
+
+.bootstrap-touchspin.input-group-lg .input-group-btn-vertical > .btn {
+  width: 2.625rem; }
+
+.bootstrap-touchspin.input-group-sm .input-group-btn-vertical > .btn {
+  width: 2.125rem; }

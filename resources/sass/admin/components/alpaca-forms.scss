@@ -1,0 +1,178 @@
+
+/* ------------------------------------------------------------------------------
+*
+*  # Alpaca forms
+*
+*  Styles for alpaca.min.js - the easiest way to generate interactive HTML5 forms for web applications
+*
+* ---------------------------------------------------------------------------- */
+.alpaca-hidden {
+  display: none; }
+
+.alpaca-field .help-block,
+.alpaca-field .alpaca-field-text-max-length-indicator {
+  color: #999;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
+
+.has-error .multiselect-container > .active .form-check {
+  color: #fff; }
+
+.has-error .btn-group.show .multiselect.btn,
+.has-error .multiselect.btn-light:active {
+  color: #F44336;
+  border-color: #F44336; }
+
+.alpaca-disabled .form-check label,
+.alpaca-disabled .form-check .switchery {
+  cursor: default;
+  color: #999; }
+
+.alpaca-invalid .alpaca-control-label,
+.alpaca-invalid .alpaca-message {
+  color: #F44336; }
+
+.alpaca-invalid .form-control {
+  color: #F44336; }
+  .alpaca-invalid .form-control:focus {
+    box-shadow: 0 1px 0 #F44336; }
+  .alpaca-invalid .form-control, .alpaca-invalid .form-control:hover, .alpaca-invalid .form-control:focus {
+    border-color: #F44336; }
+
+.alpaca-clear {
+  clear: both; }
+
+.alpaca-float-right {
+  float: right; }
+
+.alpaca-field .glyphicon {
+  font-family: "icomoon";
+  font-size: 1rem;
+  vertical-align: middle;
+  margin-top: -0.09375rem;
+  font-style: normal;
+  line-height: 1;
+  display: inline-block;
+  margin-right: 0.625rem; }
+
+.alpaca-field .glyphicon-info-sign {
+  display: none; }
+
+.alpaca-field .glyphicon-exclamation-sign:before {
+  content: '\ed63'; }
+
+.alpaca-icon-required {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  float: right;
+  margin-right: 0;
+  margin-left: 0.625rem; }
+  .alpaca-icon-required:before {
+    content: '*'; }
+
+.alpaca-controlfield-editor {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ddd; }
+  .alpaca-controlfield-editor .control-field-editor-el {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+
+.ace_editor {
+  border: 1px solid #cccccc; }
+
+.alpaca-field-ckeditor.alpaca-invalid > .cke {
+  border-color: #D84315; }
+
+.alpaca-field-optiontree .optiontree + .form-control {
+  margin-left: 0.625rem; }
+
+.alpaca-field-optiontree.optiontree-horizontal .optiontree {
+  display: inline-block; }
+  .alpaca-field-optiontree.optiontree-horizontal .optiontree .optiontree-selector {
+    display: inline-block;
+    margin-top: 0.3125rem;
+    margin-bottom: 0.3125rem; }
+    .alpaca-field-optiontree.optiontree-horizontal .optiontree .optiontree-selector:empty {
+      display: none; }
+    .alpaca-field-optiontree.optiontree-horizontal .optiontree .optiontree-selector + .optiontree-selector {
+      margin-left: 0.625rem; }
+
+.alpaca-field-optiontree.optiontree-horizontal input {
+  display: inline-block;
+  width: auto; }
+
+.alpaca-field-optiontree.optiontree-horizontal label {
+  display: block; }
+
+.has-error .multiselect {
+  border-color: #F44336;
+  color: #F44336; }
+
+.alpaca-container-label:not(legend) {
+  margin-top: 1.25rem; }
+
+.alpaca-array-toolbar {
+  margin-bottom: 0.625rem; }
+
+.alpaca-array-actionbar {
+  overflow: hidden; }
+  .alpaca-array-actionbar.alpaca-array-actionbar-top {
+    padding-bottom: 0.625rem; }
+  .alpaca-array-actionbar.alpaca-array-actionbar-bottom {
+    padding-top: 0.625rem; }
+  .alpaca-array-actionbar, .alpaca-array-actionbar.btn-group {
+    width: 100%; }
+
+.alpaca-field-object .alpaca-top,
+.alpaca-field-object .alpaca-top .alpaca-container,
+.alpaca-field-array .alpaca-top,
+.alpaca-field-array .alpaca-top .alpaca-container {
+  border: 0; }
+
+.alpaca-container {
+  border: 0; }
+
+.alpaca-control-buttons-container {
+  margin-top: 0.625rem; }
+
+.alpaca-container-item > .alpaca-container > .alpaca-field-object {
+  border: 0; }
+
+.alpaca-form-buttons-container {
+  margin-top: 1.25rem;
+  text-align: right; }
+
+.alpaca-container > .form-group {
+  margin-left: 0;
+  margin-right: 0; }
+
+.alpaca-field-hidden {
+  display: none; }
+
+.alpaca-container-item:not(:first-child) {
+  margin-top: 0.625rem; }
+
+.alpaca-container .alpaca-container-item:last-child {
+  margin-bottom: 0; }
+
+.alpaca-field-select .btn-group {
+  width: 100%; }
+
+.alpaca-field.alpaca-field-upload .fileupload-active-zone {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem; }
+
+.alpaca-field.alpaca-field-upload .template-download td.error,
+.alpaca-field.alpaca-field-upload .template-upload td.error {
+  color: #D84315;
+  word-break: break-all; }
+
+.alpaca-field.alpaca-field-address .alpaca-field-address-mapcanvas {
+  height: 250px; }
+
+.alpaca-field.alpaca-field-image .alpaca-image-display {
+  margin-top: 1.25rem; }

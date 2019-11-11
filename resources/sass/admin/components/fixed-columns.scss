@@ -1,0 +1,38 @@
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # Fixed columns
+ *
+ *  Extension that "freezes" in place the left most columns in a scrolling DataTable
+ *
+ * ---------------------------------------------------------------------------- */
+.DTFC_ScrollWrapper thead th {
+  white-space: nowrap; }
+
+.DTFC_Cloned {
+  background-color: #fff;
+  border-bottom: 0; }
+
+.DTFC_LeftWrapper .DTFC_LeftHeadWrapper,
+.DTFC_LeftWrapper .DTFC_LeftBodyWrapper,
+.DTFC_LeftWrapper .DTFC_LeftFootWrapper {
+  border-right: 1px solid #ddd; }
+
+.DTFC_RightWrapper .DTFC_RightHeadWrapper,
+.DTFC_RightWrapper .DTFC_RightBodyWrapper,
+.DTFC_RightWrapper .DTFC_RightFootWrapper {
+  border-left: 1px solid #ddd; }
+
+.DTFC_LeftBodyWrapper .DTFC_Cloned thead th:before, .DTFC_LeftBodyWrapper .DTFC_Cloned thead th:after,
+.DTFC_RightBodyWrapper .DTFC_Cloned thead th:before,
+.DTFC_RightBodyWrapper .DTFC_Cloned thead th:after {
+  content: none; }
+
+.DTFC_LeftBodyWrapper .DTFC_Cloned tbody > tr:first-child > td,
+.DTFC_LeftBodyWrapper .DTFC_Cloned tbody > tr:first-child > th,
+.DTFC_RightBodyWrapper .DTFC_Cloned tbody > tr:first-child > td,
+.DTFC_RightBodyWrapper .DTFC_Cloned tbody > tr:first-child > th {
+  border-top: 0; }
+
+.DTFC_Blocker {
+  background-color: white; }

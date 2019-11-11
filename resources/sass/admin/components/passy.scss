@@ -1,0 +1,19 @@
+
+/* ------------------------------------------------------------------------------
+*
+*  # Passy
+*
+*  Styles for passy.min.js - password length checker and password generator
+*
+* ---------------------------------------------------------------------------- */
+.badge-indicator-absolute {
+  position: relative; }
+  .badge-indicator-absolute .password-indicator-badge-absolute {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.62502rem;
+    right: 0;
+    transition: all ease-in-out 0.15s; }
+    @media screen and (prefers-reduced-motion: reduce) {
+      .badge-indicator-absolute .password-indicator-badge-absolute {
+        transition: none; } }

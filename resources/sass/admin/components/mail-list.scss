@@ -1,0 +1,53 @@
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # Mail list
+ *
+ *  Inbox page - list, read and write
+ *
+ * ---------------------------------------------------------------------------- */
+.table-inbox {
+  table-layout: fixed;
+  min-width: 768px; }
+  .table-inbox tr {
+    cursor: pointer;
+    transition: all ease-in-out 0.15s; }
+    @media screen and (prefers-reduced-motion: reduce) {
+      .table-inbox tr {
+        transition: none; } }
+    .table-inbox tr:not([class*=alpha-]):not([class*=bg-]) {
+      background-color: #fafafa; }
+    .table-inbox tr td:not(:first-child) {
+      padding-left: 0; }
+    .table-inbox tr.unread {
+      font-weight: 700; }
+      .table-inbox tr.unread:not([class*=alpha-]):not([class*=bg-]) {
+        background-color: #fff; }
+
+.table-inbox-checkbox {
+  width: 3.75rem; }
+
+.table-inbox-star,
+.table-inbox-attachment {
+  width: 2.25rem; }
+
+.table-inbox-image {
+  width: 3.37506rem; }
+
+.table-inbox-name {
+  width: 11.25rem; }
+
+@media (max-width: 767.98px) {
+  .table-inbox-subject {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis; } }
+
+.table-inbox-message {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.table-inbox-time {
+  text-align: right;
+  width: 5rem; }

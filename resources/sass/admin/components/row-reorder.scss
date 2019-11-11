@@ -1,0 +1,29 @@
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # Row Reorder extension
+ *
+ *  RowReorder adds the ability for rows in a DataTable to be reordered through
+ *  user interaction with the table.
+ *
+ * ---------------------------------------------------------------------------- */
+.dt-rowReorder-float {
+  position: absolute !important;
+  table-layout: static;
+  outline: 1px dashed #777;
+  outline-offset: -1px;
+  background-color: #fff;
+  z-index: 1030;
+  cursor: move;
+  opacity: 0.9; }
+
+.dt-rowReorder-moving {
+  outline: 1px solid #777;
+  outline-offset: -1px; }
+
+.dt-rowReorder-noOverflow {
+  overflow-x: hidden; }
+
+.dataTable td.reorder {
+  text-align: center;
+  cursor: move; }

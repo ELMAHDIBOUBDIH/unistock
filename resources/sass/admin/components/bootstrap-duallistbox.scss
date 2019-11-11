@@ -1,0 +1,122 @@
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # Bootstrap Duallistbox
+ *
+ *  Styles for listbox.js - A responsive dual listbox widget optimized for Bootstrap
+ *
+ * ---------------------------------------------------------------------------- */
+.bootstrap-duallistbox-container .box1 {
+  margin-bottom: 1.25rem; }
+
+.bootstrap-duallistbox-container select.form-control {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+.bootstrap-duallistbox-container option {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.1875rem; }
+
+.bootstrap-duallistbox-container.moveonselect .move,
+.bootstrap-duallistbox-container.moveonselect .remove {
+  display: none; }
+
+.bootstrap-duallistbox-container.moveonselect .btn-group .moveall,
+.bootstrap-duallistbox-container.moveonselect .btn-group .removeall {
+  width: 100%;
+  border-top-left-radius: 0.1875rem;
+  border-top-right-radius: 0.1875rem;
+  border-bottom-right-radius: 0.1875rem;
+  border-bottom-left-radius: 0.1875rem; }
+
+.bootstrap-duallistbox-container.moveonselect .btn-group .moveall,
+.bootstrap-duallistbox-container.moveonselect .btn-group .remove {
+  border-bottom-left-radius: 0.1875rem; }
+
+.bootstrap-duallistbox-container.moveonselect .btn-group .move,
+.bootstrap-duallistbox-container.moveonselect .btn-group .removeall {
+  border-bottom-right-radius: 0.1875rem; }
+
+.bootstrap-duallistbox-container.moveonselect .btn-group .btn + .btn {
+  border-left-width: 1px; }
+
+.bootstrap-duallistbox-container .buttons {
+  width: 100%;
+  margin-bottom: -1px; }
+
+.bootstrap-duallistbox-container .clear1,
+.bootstrap-duallistbox-container .clear2 {
+  display: none;
+  margin-top: 1.25rem; }
+  .bootstrap-duallistbox-container .clear1, .bootstrap-duallistbox-container .clear1:hover, .bootstrap-duallistbox-container .clear1:focus,
+  .bootstrap-duallistbox-container .clear2,
+  .bootstrap-duallistbox-container .clear2:hover,
+  .bootstrap-duallistbox-container .clear2:focus {
+    background-color: transparent;
+    border: 0;
+    color: #2196F3;
+    padding: 0;
+    box-shadow: none; }
+
+.bootstrap-duallistbox-container .box1.filtered .clear1,
+.bootstrap-duallistbox-container .box2.filtered .clear2 {
+  display: inline-block; }
+
+.bootstrap-duallistbox-container .move,
+.bootstrap-duallistbox-container .remove,
+.bootstrap-duallistbox-container .moveall,
+.bootstrap-duallistbox-container .removeall {
+  width: 50%; }
+
+.bootstrap-duallistbox-container .btn-group .btn {
+  margin: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; }
+  .bootstrap-duallistbox-container .btn-group .btn + .btn {
+    border-left-width: 0; }
+  .bootstrap-duallistbox-container .btn-group .btn > i {
+    float: none;
+    text-align: center; }
+    .bootstrap-duallistbox-container .btn-group .btn > i + i {
+      margin-left: -1rem; }
+
+.bootstrap-duallistbox-container .filter {
+  margin-bottom: 1.25rem;
+  position: relative; }
+  .bootstrap-duallistbox-container .filter.placeholder {
+    color: #999; }
+
+.bootstrap-duallistbox-container .info-container .info {
+  display: inline-block;
+  margin-top: 1.25rem; }
+  .bootstrap-duallistbox-container .info-container .info .badge {
+    margin-right: 0.625rem; }
+
+.sidebar .bootstrap-duallistbox-container {
+  text-align: center; }
+  .sidebar .bootstrap-duallistbox-container .box1,
+  .sidebar .bootstrap-duallistbox-container .box2 {
+    -ms-flex: auto;
+        flex: auto;
+    width: 100%;
+    max-width: none; }
+  .sidebar .bootstrap-duallistbox-container .box1 {
+    padding-bottom: 0.3125rem; }
+    .sidebar .bootstrap-duallistbox-container .box1:after {
+      content: '\e9c9';
+      font-size: 1rem;
+      font-family: "icomoon";
+      display: block;
+      text-align: center;
+      line-height: 1;
+      margin: 0.625rem 0;
+      opacity: 0.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+
+@media (min-width: 768px) {
+  .bootstrap-duallistbox-container .box1 {
+    margin-bottom: 0; }
+  .sidebar .bootstrap-duallistbox-container .box1 {
+    margin-bottom: 0; } }

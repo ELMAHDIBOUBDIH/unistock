@@ -1,0 +1,33 @@
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # Fixed Header extension
+ *
+ *  This extension lets your users quickly determine what each column refers to
+ *  rather than needing to scroll back to the top of the table.
+ *
+ * ---------------------------------------------------------------------------- */
+.fixedHeader-floating,
+.fixedHeader-locked {
+  background-color: #fff;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.fixedHeader-floating {
+  position: fixed; }
+  .fixedHeader-floating + .fixedHeader-floating,
+  .fixedHeader-locked + .fixedHeader-floating {
+    border-top: 0 !important; }
+  @media (max-width: 767.98px) {
+    .fixedHeader-floating {
+      display: none; } }
+
+.fixedHeader-locked {
+  position: absolute; }
+  @media (max-width: 767.98px) {
+    .fixedHeader-locked {
+      display: none; } }
+
+@media print {
+  table.fixedHeader-floating {
+    display: none; } }

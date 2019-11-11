@@ -1,0 +1,70 @@
+/* ------------------------------------------------------------------------------
+ *  # Page header
+ * ---------------------------------------------------------------------------- */
+.page-header {
+  position: relative; }
+
+.page-title {
+  padding: 2rem 0;
+  position: relative; }
+  .page-title small {
+    display: inline-block;
+    margin-left: 0.625rem; }
+    .page-title small:before {
+      content: '/';
+      margin-right: 0.875rem; }
+    .page-title small.d-block {
+      margin-left: 0; }
+      .page-title small.d-block:before {
+        content: none; }
+  .page-title small.d-block,
+  .page-title .breadcrumb {
+    margin-left: 1.875rem; }
+  .page-title h1, .page-title h2, .page-title h3, .page-title h4, .page-title h5, .page-title h6 {
+    margin: 0; }
+
+.page-header-content {
+  position: relative;
+  padding: 0 1.25rem; }
+  .page-header-content[class*=border-bottom-] + .breadcrumb-line {
+    border-top: 0; }
+  @media (min-width: 768px) {
+    .page-header-content {
+      padding-left: 5.625rem;
+      padding-right: 5.625rem; } }
+  @media (min-width: 1200px) {
+    .page-header-content {
+      padding-left: 10rem;
+      padding-right: 10rem; } }
+
+.page-header-light {
+  background-color: #fff; }
+  .page-header-light.has-cover {
+    background: url(../../../../../../global_assets/images/backgrounds/seamless.png); }
+
+.page-header-dark {
+  background-color: #273246;
+  color: #fff; }
+  .page-header-dark > .breadcrumb > li > a,
+  .page-header-dark > .breadcrumb > li + li:before,
+  .page-header-dark .page-header-content .breadcrumb > li > a,
+  .page-header-dark .page-header-content .breadcrumb > li + li:before {
+    color: rgba(255, 255, 255, 0.9); }
+  .page-header-dark > .breadcrumb > li > a:hover, .page-header-dark > .breadcrumb > li > a:focus,
+  .page-header-dark .page-header-content .breadcrumb > li > a:hover,
+  .page-header-dark .page-header-content .breadcrumb > li > a:focus {
+    color: #fff;
+    opacity: 1; }
+  .page-header-dark > .breadcrumb > .active,
+  .page-header-dark .page-header-content .breadcrumb > .active {
+    color: rgba(255, 255, 255, 0.5); }
+  .page-header-dark.has-cover {
+    background: url(../../../../../../global_assets/images/login_cover.jpg);
+    background-size: cover; }
+
+.page-header-light,
+.page-header-dark {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  .page-header-light .breadcrumb-line:not(.breadcrumb-line-component):last-child,
+  .page-header-dark .breadcrumb-line:not(.breadcrumb-line-component):last-child {
+    box-shadow: none; }

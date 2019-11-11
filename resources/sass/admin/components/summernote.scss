@@ -1,0 +1,501 @@
+
+/* ------------------------------------------------------------------------------
+*
+*  # Summernote editor
+*
+*  Styles for summernote.min.js - super simple WYSIWYG Editor for Bootstrap framework
+*
+* ---------------------------------------------------------------------------- */
+@font-face {
+  font-family: 'summernote';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../../../../global_assets/css/icons/summernote//summernote.eot?0d0d5fac99cc8774d89eb08b1a8323c4");
+  src: url("../../../../../../global_assets/css/icons/summernote//summernote.eot?#iefix") format("embedded-opentype"), url("../../../../../../global_assets/css/icons/summernote//summernote.woff?0d0d5fac99cc8774d89eb08b1a8323c4") format("woff"), url("../../../../../../global_assets/css/icons/summernote//summernote.ttf?0d0d5fac99cc8774d89eb08b1a8323c4") format("truetype"); }
+
+[class^="note-icon-"]:before,
+[class*=" note-icon-"]:before {
+  display: inline-block;
+  font-family: 'summernote';
+  font-style: normal;
+  font-size: inherit;
+  text-decoration: inherit;
+  vertical-align: middle;
+  line-height: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.note-icon-align-center:before {
+  content: "\f101"; }
+
+.note-icon-align-indent:before {
+  content: "\f102"; }
+
+.note-icon-align-justify:before {
+  content: "\f103"; }
+
+.note-icon-align-left:before {
+  content: "\f104"; }
+
+.note-icon-align-outdent:before {
+  content: "\f105"; }
+
+.note-icon-align-right:before {
+  content: "\f106"; }
+
+.note-icon-align:before {
+  content: "\f107"; }
+
+.note-icon-arrow-circle-down:before {
+  content: "\f108"; }
+
+.note-icon-arrow-circle-left:before {
+  content: "\f109"; }
+
+.note-icon-arrow-circle-right:before {
+  content: "\f10a"; }
+
+.note-icon-arrow-circle-up:before {
+  content: "\f10b"; }
+
+.note-icon-arrows-alt:before {
+  content: "\f10c"; }
+
+.note-icon-arrows-h:before {
+  content: "\f10d"; }
+
+.note-icon-arrows-v:before {
+  content: "\f10e"; }
+
+.note-icon-bold:before {
+  content: "\f10f"; }
+
+.note-icon-caret:before {
+  content: "\f110"; }
+
+.note-icon-chain-broken:before {
+  content: "\f111"; }
+
+.note-icon-circle:before {
+  content: "\f112"; }
+
+.note-icon-close:before {
+  content: "\f113"; }
+
+.note-icon-code:before {
+  content: "\f114"; }
+
+.note-icon-col-after:before {
+  content: "\f115"; }
+
+.note-icon-col-before:before {
+  content: "\f116"; }
+
+.note-icon-col-remove:before {
+  content: "\f117"; }
+
+.note-icon-eraser:before {
+  content: "\f118"; }
+
+.note-icon-font:before {
+  content: "\f119"; }
+
+.note-icon-frame:before {
+  content: "\f11a"; }
+
+.note-icon-italic:before {
+  content: "\f11b"; }
+
+.note-icon-link:before {
+  content: "\f11c"; }
+
+.note-icon-magic:before {
+  content: "\f11d"; }
+
+.note-icon-menu-check:before {
+  content: "\f11e"; }
+
+.note-icon-minus:before {
+  content: "\f11f"; }
+
+.note-icon-orderedlist:before {
+  content: "\f120"; }
+
+.note-icon-pencil:before {
+  content: "\f121"; }
+
+.note-icon-picture:before {
+  content: "\f122"; }
+
+.note-icon-question:before {
+  content: "\f123"; }
+
+.note-icon-redo:before {
+  content: "\f124"; }
+
+.note-icon-row-above:before {
+  content: "\f125"; }
+
+.note-icon-row-below:before {
+  content: "\f126"; }
+
+.note-icon-row-remove:before {
+  content: "\f127"; }
+
+.note-icon-special-character:before {
+  content: "\f128"; }
+
+.note-icon-square:before {
+  content: "\f129"; }
+
+.note-icon-strikethrough:before {
+  content: "\f12a"; }
+
+.note-icon-subscript:before {
+  content: "\f12b"; }
+
+.note-icon-summernote:before {
+  content: "\f12c"; }
+
+.note-icon-superscript:before {
+  content: "\f12d"; }
+
+.note-icon-table:before {
+  content: "\f12e"; }
+
+.note-icon-text-height:before {
+  content: "\f12f"; }
+
+.note-icon-trash:before {
+  content: "\f130"; }
+
+.note-icon-underline:before {
+  content: "\f131"; }
+
+.note-icon-undo:before {
+  content: "\f132"; }
+
+.note-icon-unorderedlist:before {
+  content: "\f133"; }
+
+.note-icon-video:before {
+  content: "\f134"; }
+
+.note-editor {
+  position: relative;
+  border-width: 1px; }
+  .note-editor .note-dropzone {
+    position: absolute;
+    z-index: 100;
+    display: none;
+    color: #2196F3;
+    background-color: #fff;
+    pointer-events: none;
+    border: 2px dashed #2196F3;
+    opacity: .95; }
+    .note-editor .note-dropzone.hover {
+      color: #2196F3;
+      border: 2px dashed #2196F3; }
+    .note-editor .note-dropzone .note-dropzone-message {
+      display: table-cell;
+      font-size: 1.0625rem;
+      font-weight: 500;
+      text-align: center;
+      vertical-align: middle; }
+  .card .note-editor {
+    border-color: #ddd;
+    box-shadow: none; }
+  .note-editor.dragover .note-dropzone {
+    display: table; }
+  .note-editor .note-form-group:last-child {
+    margin-bottom: 0; }
+  .note-editor .note-group-image-url:last-child {
+    margin-bottom: 0; }
+  .note-editor .modal-title {
+    font-size: 1.0625rem; }
+  .note-editor .dropdown-style pre {
+    background-color: #fff;
+    padding: 0.5rem 1.25rem; }
+  .summernote-borderless ~ .note-editor {
+    border: 0;
+    margin: 0;
+    border-radius: 0; }
+
+.note-air-editor {
+  outline: 0; }
+
+@-moz-document url-prefix() {
+  .note-image-input {
+    height: auto; } }
+
+.note-placeholder {
+  position: absolute;
+  display: none;
+  color: #999; }
+
+.note-toolbar:not([class*=bg-]):not([class*=alpha-]) {
+  padding: 1.25rem;
+  padding-top: 0.625rem;
+  margin: 0; }
+
+.dropdown-fontname,
+.dropdown-style {
+  max-height: 20rem;
+  overflow: auto; }
+
+.dropdown-style a > p {
+  margin-bottom: 0; }
+
+.note-editing-area {
+  position: relative; }
+  .note-editing-area .note-editable {
+    outline: 0; }
+    .note-editing-area .note-editable sup {
+      vertical-align: super; }
+    .note-editing-area .note-editable sub {
+      vertical-align: sub; }
+  .note-editing-area img.note-float-left {
+    margin-right: 0.625rem; }
+  .note-editing-area img.note-float-right {
+    margin-left: 0.625rem; }
+
+.note-frame.codeview .note-editing-area .note-editable {
+  display: none; }
+
+.note-frame.codeview .note-editing-area .note-codable {
+  display: block; }
+
+.note-frame .note-editing-area {
+  overflow: hidden; }
+  .note-frame .note-editing-area .note-editable {
+    padding: 1.25rem;
+    overflow: auto;
+    color: #333;
+    background-color: #fff;
+    min-height: 9.375rem; }
+    .note-frame .note-editing-area .note-editable[contenteditable="false"] {
+      background-color: #eee; }
+  .note-frame .note-editing-area .note-codable {
+    display: none;
+    width: 100%;
+    padding: 1.25rem;
+    margin-bottom: 0;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    color: #fff;
+    background-color: #333;
+    border: 0;
+    resize: none;
+    box-shadow: none;
+    border-radius: 0; }
+
+.note-frame.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1080;
+  width: 100% !important;
+  border: 0;
+  border-radius: 0; }
+  .note-frame.fullscreen .note-resizebar {
+    display: none; }
+
+.note-frame .note-placeholder {
+  position: absolute;
+  display: none;
+  color: #999; }
+
+.note-statusbar {
+  background-color: rgba(0, 0, 0, 0.02); }
+  .note-statusbar .note-resizebar {
+    width: 100%;
+    padding: 2px 0;
+    cursor: ns-resize;
+    border-top: 1px solid #ddd; }
+    .note-statusbar .note-resizebar .note-icon-bar {
+      width: 1.25rem;
+      margin: 1px auto;
+      border-top: 1px solid #ddd; }
+
+.note-popover.popover {
+  display: none;
+  max-width: none; }
+  .note-popover.popover .popover-content a {
+    display: inline-block;
+    max-width: 276px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .note-popover.popover .arrow {
+    left: 1.25rem !important; }
+
+.note-popover .popover-content {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0.9375rem 0 0 0.9375rem;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .note-popover .popover-content > span {
+    margin-right: 0.9375rem;
+    margin-bottom: 0.9375rem; }
+  .note-popover .popover-content > .btn-group {
+    margin-right: 0.9375rem;
+    margin-bottom: 0.9375rem; }
+
+.note-style h1, .note-style h2, .note-style h3, .note-style h4, .note-style h5, .note-style h6, .note-style blockquote {
+  margin: 0; }
+
+.note-hint-popover {
+  min-width: 11.25rem;
+  padding: 0.5rem 0; }
+  .note-hint-popover .popover-content {
+    max-height: 10rem;
+    overflow: auto; }
+    .note-hint-popover .popover-content .note-hint-group .note-hint-item {
+      display: block !important;
+      padding: 0.5rem 1.25rem;
+      color: #333;
+      clear: both; }
+      .note-hint-popover .popover-content .note-hint-group .note-hint-item:hover, .note-hint-popover .popover-content .note-hint-group .note-hint-item:focus {
+        color: #333;
+        background-color: #f5f5f5;
+        text-decoration: none; }
+      .note-hint-popover .popover-content .note-hint-group .note-hint-item.active {
+        color: #fff;
+        text-decoration: none;
+        background-color: #26A69A; }
+
+.card-header.note-toolbar > .btn-group {
+  margin-top: 0.625rem;
+  margin-right: 0.9375rem; }
+  .card-header.note-toolbar > .btn-group:last-child {
+    margin-right: 0; }
+
+.card-header.note-toolbar .dropdown-menu.note-check a i {
+  display: none; }
+
+.card-header.note-toolbar .dropdown-menu.note-check a.checked {
+  color: #fff;
+  background-color: #26A69A; }
+
+.card-header.note-toolbar .note-color-palette {
+  line-height: 1; }
+  .card-header.note-toolbar .note-color-palette div .note-color-btn {
+    padding: 0;
+    margin: 0;
+    border: 1px solid #fff;
+    width: 1.25rem;
+    height: 1.25rem; }
+    .card-header.note-toolbar .note-color-palette div .note-color-btn:hover {
+      border-color: #333; }
+
+.note-popover .btn-group .note-table,
+.note-toolbar .btn-group .note-table {
+  min-width: 0;
+  padding: 0.5rem; }
+  .note-popover .btn-group .note-table .note-dimension-picker,
+  .note-toolbar .btn-group .note-table .note-dimension-picker {
+    font-size: 1.125rem; }
+    .note-popover .btn-group .note-table .note-dimension-picker .note-dimension-picker-mousecatcher,
+    .note-toolbar .btn-group .note-table .note-dimension-picker .note-dimension-picker-mousecatcher {
+      position: absolute !important;
+      z-index: 3;
+      width: 10em;
+      height: 10em;
+      cursor: pointer; }
+    .note-popover .btn-group .note-table .note-dimension-picker .note-dimension-picker-unhighlighted,
+    .note-toolbar .btn-group .note-table .note-dimension-picker .note-dimension-picker-unhighlighted {
+      position: relative !important;
+      z-index: 1;
+      width: 5em;
+      height: 5em;
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASAgMAAAAroGbEAAAACVBMVEUAAIj4+Pjp6ekKlAqjAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfYAR0BKhmnaJzPAAAAG0lEQVQI12NgAAOtVatWMTCohoaGUY+EmIkEAEruEzK2J7tvAAAAAElFTkSuQmCC") repeat; }
+    .note-popover .btn-group .note-table .note-dimension-picker .note-dimension-picker-highlighted,
+    .note-toolbar .btn-group .note-table .note-dimension-picker .note-dimension-picker-highlighted {
+      position: absolute !important;
+      z-index: 2;
+      width: 1em;
+      height: 1em;
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASAgMAAAAroGbEAAAACVBMVEUAAIjd6vvD2f9LKLW+AAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfYAR0BKwNDEVT0AAAAG0lEQVQI12NgAAOtVatWMTCohoaGUY+EmIkEAEruEzK2J7tvAAAAAElFTkSuQmCC") repeat; }
+  .note-popover .btn-group .note-table .note-dimension-display,
+  .note-toolbar .btn-group .note-table .note-dimension-display {
+    text-align: center;
+    margin-top: 0.5rem; }
+
+.note-color .note-color-row {
+  font-size: 0; }
+
+.note-color .dropdown-menu.show {
+  display: -ms-flexbox;
+  display: flex; }
+
+.note-color .dropdown-menu .note-palette {
+  display: inline-block;
+  width: 10rem;
+  margin: 0.5rem 1rem; }
+  .note-color .dropdown-menu .note-palette .note-palette-title {
+    margin-bottom: 0.625rem;
+    font-weight: 500; }
+  .note-color .dropdown-menu .note-palette .note-color-reset {
+    width: 100%;
+    padding: 0.375rem 0.875rem;
+    margin-bottom: 1rem; }
+
+.note-para .dropdown-menu {
+  padding: 0.5rem;
+  white-space: nowrap; }
+  .note-para .dropdown-menu > div:first-child {
+    margin-right: 0.625rem; }
+
+.note-handle {
+  position: relative; }
+  .note-handle .note-control-selection {
+    position: absolute;
+    display: none;
+    border: 1px solid #333;
+    z-index: 10; }
+    .note-handle .note-control-selection > div {
+      position: absolute; }
+    .note-handle .note-control-selection .note-control-selection-bg {
+      background-color: #333;
+      opacity: 0.3;
+      width: 100%;
+      height: 100%; }
+    .note-handle .note-control-selection .note-control-handle,
+    .note-handle .note-control-selection .note-control-holder,
+    .note-handle .note-control-selection .note-control-sizing {
+      border: 1px solid #333;
+      width: 0.5rem;
+      height: 0.5rem; }
+    .note-handle .note-control-selection .note-control-sizing {
+      background-color: #fff; }
+    .note-handle .note-control-selection .note-control-nw {
+      top: -0.3125rem;
+      left: -0.3125rem;
+      border-right: 0;
+      border-bottom: 0; }
+    .note-handle .note-control-selection .note-control-ne {
+      top: -0.3125rem;
+      right: -0.3125rem;
+      border-bottom: 0;
+      border-left: 0; }
+    .note-handle .note-control-selection .note-control-sw {
+      bottom: -0.3125rem;
+      left: -0.3125rem;
+      border-top: 0;
+      border-right: 0; }
+    .note-handle .note-control-selection .note-control-se {
+      right: -0.3125rem;
+      bottom: -0.3125rem;
+      cursor: se-resize; }
+    .note-handle .note-control-selection .note-control-selection-info {
+      right: 0;
+      bottom: 0;
+      padding: 0.3125rem;
+      margin: 0.3125rem;
+      color: #fff;
+      background-color: #333;
+      opacity: 0.7;
+      border-radius: 0.1875rem; }

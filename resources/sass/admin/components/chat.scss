@@ -1,0 +1,67 @@
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # Chat layouts
+ *
+ *  Conversation chat styles - layouts, chat elements, colors, options
+ *
+ * ---------------------------------------------------------------------------- */
+.media-chat-scrollable {
+  max-height: 520px;
+  overflow: auto; }
+
+@media (min-width: 576px) {
+  .media-chat .media {
+    margin-right: 20%; }
+    .media-chat .media.media-chat-item-reverse {
+      margin-right: 0;
+      margin-left: 20%; } }
+
+.media-chat-item {
+  position: relative;
+  padding: 0.625rem 1rem;
+  width: auto;
+  display: inline-block;
+  color: #333;
+  border-radius: 0.1875rem; }
+  .media-chat-item:not([class*=bg-]) {
+    background-color: #eee;
+    border-color: #eee; }
+  .media-chat-item:before {
+    content: '';
+    left: -5px;
+    top: 0.93752rem;
+    position: absolute;
+    margin-left: 0;
+    border-top: 5px solid transparent;
+    border-right: 5px solid;
+    border-right-color: inherit;
+    border-bottom: 5px solid transparent; }
+    .media-chat-item-reverse .media-chat-item:before {
+      left: auto;
+      right: -5px;
+      border-right: 0;
+      border-left: 5px solid;
+      border-left-color: inherit; }
+
+.media-chat-item-reverse .media-chat-item {
+  text-align: left;
+  color: #fff; }
+  .media-chat-item-reverse .media-chat-item:not([class*=bg-]) {
+    background-color: #42A5F5;
+    border-color: #42A5F5; }
+
+.media-chat-item-reverse .media-body {
+  text-align: right; }
+
+.media-chat-inverse .media-chat-item {
+  color: #fff; }
+  .media-chat-inverse .media-chat-item:not([class*=bg-]) {
+    background-color: #42A5F5;
+    border-color: #42A5F5; }
+
+.media-chat-inverse .media-chat-item-reverse .media-chat-item {
+  color: #333; }
+  .media-chat-inverse .media-chat-item-reverse .media-chat-item:not([class*=bg-]) {
+    background-color: #eee;
+    border-color: #eee; }

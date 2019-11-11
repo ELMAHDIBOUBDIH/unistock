@@ -1,0 +1,382 @@
+
+/* ------------------------------------------------------------------------------
+*
+*  # C3 charts
+*
+*  Styles for C3.js visualization library
+*
+* ---------------------------------------------------------------------------- */
+.c3 svg {
+  font-size: 0.75rem; }
+
+.c3 path,
+.c3 line {
+  fill: none;
+  stroke: #999; }
+
+.c3 path.domain {
+  shape-rendering: crispEdges; }
+
+.c3 text {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+.c3-legend-item-tile,
+.c3-xgrid-focus,
+.c3-ygrid,
+.c3-event-rect,
+.c3-bars path {
+  shape-rendering: crispEdges; }
+
+.c3-chart-arc path {
+  stroke: #fff; }
+
+.c3-chart-arc text {
+  fill: #fff;
+  font-size: 0.8125rem; }
+
+.c3-grid line {
+  stroke: #ccc; }
+
+.c3-grid text {
+  fill: #ccc; }
+
+.c3-xgrid,
+.c3-ygrid {
+  stroke-dasharray: 3 3; }
+
+.c3-text {
+  font-weight: 500; }
+  .c3-text.c3-empty {
+    fill: #777;
+    font-size: 2em; }
+
+.c3-line {
+  stroke-width: 2px; }
+
+.c3-area {
+  stroke-width: 0;
+  opacity: 0.4; }
+
+.c3-circle._expanded_ {
+  stroke-width: 1.5px;
+  stroke: #fff; }
+
+.c3-selected-circle {
+  fill: #fff;
+  stroke-width: 2px; }
+
+.c3-bar {
+  stroke-width: 0; }
+  .c3-bar._expanded_ {
+    fill-opacity: 0.75; }
+
+.c3-chart-arcs-title {
+  font-size: 0.9375rem; }
+
+.c3-chart-arcs .c3-chart-arcs-background {
+  fill: #eee;
+  stroke: none; }
+
+.c3-chart-arcs .c3-chart-arcs-gauge-unit {
+  fill: #333;
+  font-size: 0.9375rem; }
+
+.c3-chart-arcs .c3-chart-arcs-gauge-max,
+.c3-chart-arcs .c3-chart-arcs-gauge-min {
+  fill: #f5f5f5; }
+
+.c3-chart-arc .c3-gauge-value {
+  fill: #333;
+  font-size: 1.5625rem; }
+
+.c3-target.c3-focused {
+  opacity: 1; }
+  .c3-target.c3-focused path.c3-line,
+  .c3-target.c3-focused path.c3-step {
+    stroke-width: 2px; }
+
+.c3-target.c3-defocused {
+  opacity: 0.3 !important; }
+
+.c3-region {
+  fill: #546E7A;
+  fill-opacity: .1; }
+
+.c3-brush .extent {
+  fill-opacity: .1; }
+
+.c3-legend-item {
+  font-size: 0.75rem; }
+
+.c3-legend-background {
+  fill: #fff;
+  stroke: lightgray;
+  stroke-width: 1;
+  opacity: 0.75; }
+
+.c3-tooltip {
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: #fff;
+  empty-cells: show;
+  opacity: 0.95; }
+  .c3-tooltip th {
+    background-color: #333;
+    padding: 0.5rem 1.25rem;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #333;
+    font-weight: 500; }
+  .c3-tooltip td {
+    padding: 0.5rem 1.25rem;
+    background-color: #fff;
+    border: 1px solid #ddd; }
+    .c3-tooltip td > span {
+      display: inline-block;
+      margin-right: 0.625rem;
+      width: 0.5rem;
+      height: 0.5rem; }
+    .c3-tooltip td.value {
+      text-align: right; }
+
+	  /* ------------------------------------------------------------------------------
+	  *
+	  *  # D3.js library
+	  *
+	  *  Basic styles for D3.js visualization library
+	  *
+	  * ---------------------------------------------------------------------------- */
+	  .d3-axis path {
+	    fill: none;
+	    stroke: #999;
+	    shape-rendering: crispEdges; }
+
+	  .d3-axis line {
+	    stroke: #f5f5f5;
+	    shape-rendering: crispEdges; }
+
+	  .d3-axis .tick,
+	  .d3-axis .tick text {
+	    font-size: 0.75rem;
+	    fill: #333; }
+
+	  .d3-axis-solid path,
+	  .d3-axis-solid line {
+	    stroke: #ccc; }
+
+	  .d3-axis-solid .tick {
+	    fill: #999; }
+	    .d3-axis-solid .tick text {
+	      fill: #999; }
+
+	  .d3-axis-strong path,
+	  .d3-axis-strong line {
+	    stroke: #ccc; }
+
+	  .d3-axis-strong .tick {
+	    fill: #333; }
+	    .d3-axis-strong .tick text {
+	      fill: #333; }
+
+	  .d3-axis-transparent path {
+	    stroke: none; }
+
+	  .d3-axis-transparent line {
+	    stroke: #eee; }
+
+	  .d3-axis-transparent .tick {
+	    fill: #999; }
+	    .d3-axis-transparent .tick text {
+	      fill: #999; }
+
+	  .d3-tip {
+	    position: absolute;
+	    padding: 0.5625rem 0.75rem;
+	    background-color: #000;
+	    color: #fff;
+	    margin-bottom: 0;
+	    font-size: 0.8125rem;
+	    z-index: 1070;
+	    border-radius: 0.1875rem; }
+	    .d3-tip .d3-tip-arrow {
+	      position: absolute;
+	      width: 0;
+	      height: 0;
+	      border-color: transparent;
+	      border-style: solid; }
+
+	  .d3-tip.n .d3-tip-arrow {
+	    bottom: 0;
+	    left: 50%;
+	    margin-left: 0;
+	    border-width: 0 0 0;
+	    border-top-color: #000; }
+
+	  .d3-tip.e .d3-tip-arrow {
+	    top: 50%;
+	    margin-top: 0;
+	    /*rtl:begin:ignore*/
+	    left: 0;
+	    border-width: 0 0 0 0;
+	    border-right-color: #000;
+	    /*rtl:end:ignore*/ }
+
+	  .d3-tip.w .d3-tip-arrow {
+	    top: 50%;
+	    margin-top: 0;
+	    /*rtl:begin:ignore*/
+	    right: 0;
+	    border-width: 0 0 0 0;
+	    border-left-color: #000;
+	    /*rtl:end:ignore*/ }
+
+	  .d3-tip.s .d3-tip-arrow {
+	    top: 0;
+	    left: 50%;
+	    margin-left: 0;
+	    border-width: 0 0 0;
+	    border-bottom-color: #000; }
+
+	  .venntooltip {
+	    position: absolute;
+	    text-align: center;
+	    white-space: nowrap;
+	    background-color: #000;
+	    color: #fff;
+	    padding: 0.5625rem 0.75rem;
+	    display: none;
+	    border-radius: 0.1875rem; }
+
+	  .d3-line {
+	    fill: none; }
+	    .d3-line-thin {
+	      stroke-width: 1px; }
+	    .d3-line-medium {
+	      stroke-width: 1.5px; }
+	    .d3-line-strong {
+	      stroke-width: 2px; }
+
+	  .d3-line-circle {
+	    fill: none;
+	    cursor: pointer; }
+	    .d3-line-circle-thin {
+	      stroke-width: 1px; }
+	    .d3-line-circle-medium {
+	      stroke-width: 1.5px; }
+	    .d3-line-circle-strong {
+	      stroke-width: 2px; }
+
+	  .d3-grid .tick line {
+	    stroke-width: 1px;
+	    stroke: #eee;
+	    shape-rendering: crispEdges; }
+
+	  .d3-grid .tick text {
+	    fill: #333;
+	    stroke: none; }
+
+	  .d3-grid-dashed .tick {
+	    stroke-dasharray: 4,2;
+	    stroke-width: 1px;
+	    stroke: #eee;
+	    shape-rendering: crispEdges; }
+
+	  .d3-grid-dashed path {
+	    stroke-width: 0; }
+
+	  .d3-crosshair-overlay {
+	    fill: none;
+	    pointer-events: all; }
+
+	  .bullet-tick line {
+	    stroke: #999;
+	    stroke-width: 1px;
+	    shape-rendering: crispEdges; }
+
+	  .bullet-tick text {
+	    fill: #999;
+	    font-size: 0.75rem; }
+
+	  .bullet-marker {
+	    stroke-width: 2px;
+	    shape-rendering: crispEdges; }
+
+	  .bullet-title {
+	    font-size: 0.8125rem;
+	    font-weight: 500; }
+
+	  .bullet-subtitle {
+	    fill: #999; }
+
+	  .bullet-1 .bullet-range-1 {
+	    fill: rgba(96, 125, 139, 0.8); }
+
+	  .bullet-1 .bullet-range-2 {
+	    fill: rgba(96, 125, 139, 0.4); }
+
+	  .bullet-1 .bullet-range-3 {
+	    fill: #607D8B; }
+
+	  .bullet-1 .bullet-measure-1 {
+	    fill: rgba(84, 110, 122, 0.9); }
+
+	  .bullet-1 .bullet-measure-2 {
+	    fill: #fff; }
+
+	  .bullet-1 .bullet-marker {
+	    stroke: #37474F; }
+
+	  .bullet-2 .bullet-range-1 {
+	    fill: rgba(255, 112, 67, 0.6); }
+
+	  .bullet-2 .bullet-range-2 {
+	    fill: rgba(255, 112, 67, 0.3); }
+
+	  .bullet-2 .bullet-range-3 {
+	    fill: #FF7043; }
+
+	  .bullet-2 .bullet-measure-1 {
+	    fill: rgba(244, 81, 30, 0.9); }
+
+	  .bullet-2 .bullet-measure-2 {
+	    fill: #fff; }
+
+	  .bullet-2 .bullet-marker {
+	    stroke: #D84315; }
+
+	  .bullet-3 .bullet-range-1 {
+	    fill: rgba(102, 187, 106, 0.7); }
+
+	  .bullet-3 .bullet-range-2 {
+	    fill: rgba(102, 187, 106, 0.35); }
+
+	  .bullet-3 .bullet-range-3 {
+	    fill: #66BB6A; }
+
+	  .bullet-3 .bullet-measure-1 {
+	    fill: rgba(67, 160, 71, 0.9); }
+
+	  .bullet-3 .bullet-measure-2 {
+	    fill: #fff; }
+
+	  .bullet-3 .bullet-marker {
+	    stroke: #2E7D32; }
+
+	  .counter-icon {
+	    font-size: 2rem;
+	    position: absolute;
+	    left: 50%;
+	    margin-left: -1rem; }
+
+	  .chart-widget-legend {
+	    margin: 0.625rem 0 0 0;
+	    padding: 0;
+	    font-size: 0.75rem;
+	    text-align: center; }
+	    .chart-widget-legend li {
+	      margin: 0.3125rem 0.625rem 0;
+	      padding: 0.4375rem 0.5rem 0.3125rem;
+	      display: inline-block; }

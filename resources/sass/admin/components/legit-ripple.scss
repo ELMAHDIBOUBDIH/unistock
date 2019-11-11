@@ -1,0 +1,73 @@
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # Ripple effect
+ *
+ *  Styles for ripple.min.js - material design ripple click effect
+ *
+ * ---------------------------------------------------------------------------- */
+.legitRipple {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+.legitRipple-ripple {
+  position: absolute;
+  width: 0;
+  z-index: -1;
+  pointer-events: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.15);
+  will-change: transform, width, opacity;
+  opacity: 1;
+  transition: width 0.15s linear, opacity 0.5s ease-out;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block; }
+  .legitRipple-ripple:before {
+    content: "";
+    padding-top: 100%;
+    display: block; }
+
+.ripple-dark .legitRipple-ripple,
+.btn-light .legitRipple-ripple,
+.btn.bg-white .legitRipple-ripple,
+.btn-link .legitRipple-ripple,
+.btn.bg-transparent .legitRipple-ripple,
+.page-link:not(.active) .legitRipple-ripple,
+.nav-tabs:not([class*=bg-]) .nav-link .legitRipple-ripple,
+.nav-pills .nav-link .legitRipple-ripple,
+.ui-button:not([class*=bg-]) .legitRipple-ripple,
+.ui-datepicker-buttonpane button:not([class*=bg-]) .legitRipple-ripple,
+.ui-tabs-anchor .legitRipple-ripple,
+.fc-button .legitRipple-ripple,
+.sp-replacer .legitRipple-ripple,
+.sidebar-light .nav-sidebar .nav-link .legitRipple-ripple,
+.plupload_add .legitRipple-ripple,
+.btn[class*=alpha-] .legitRipple-ripple,
+.btn-outline.bg-white .legitRipple-ripple,
+.btn-outline.bg-light .legitRipple-ripple,
+.list-group-item-action .legitRipple-ripple,
+.navbar-light .navbar-nav-link .legitRipple-ripple {
+  background-color: rgba(0, 0, 0, 0.075); }
+
+.ripple-light .legitRipple-ripple,
+.sidebar-user-material-footer > a .legitRipple-ripple,
+.sp-replacer[class*=bg-] .legitRipple-ripple,
+.pagination-pager-linked .page-link .legitRipple-ripple,
+.page-item.active .page-link .legitRipple-ripple,
+.list-group-item-action.active .legitRipple-ripple {
+  background-color: rgba(255, 255, 255, 0.15); }
+
+img ~ .legitRipple-ripple {
+  z-index: auto; }
+
+.dropdown-toggle.legitRipple-empty:after {
+  margin-left: 0; }
+
+.legitRipple-template {
+  display: none; }

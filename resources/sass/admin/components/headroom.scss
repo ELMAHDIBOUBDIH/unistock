@@ -1,0 +1,31 @@
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # Headroom
+ *
+ *  Styles for headroom.min.js - hides BS navbar component on page scroll
+ *
+ * ---------------------------------------------------------------------------- */
+.headroom {
+  transition: box-shadow ease-in-out 0.2s, -webkit-transform ease-in-out 0.2s;
+  transition: transform ease-in-out 0.2s, box-shadow ease-in-out 0.2s;
+  transition: transform ease-in-out 0.2s, box-shadow ease-in-out 0.2s, -webkit-transform ease-in-out 0.2s;
+  will-change: transform; }
+
+.navbar-slide-top.headroom--pinned {
+  -webkit-transform: translateY(0);
+          transform: translateY(0); }
+
+.navbar-slide-top.headroom--unpinned {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  box-shadow: none; }
+
+.navbar-slide-bottom.headroom--pinned {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  box-shadow: none; }
+
+.navbar-slide-bottom.headroom--unpinned {
+  -webkit-transform: translateY(0);
+          transform: translateY(0); }

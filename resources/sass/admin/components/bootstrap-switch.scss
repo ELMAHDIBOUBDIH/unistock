@@ -1,0 +1,184 @@
+
+/* ------------------------------------------------------------------------------
+*
+*  # Bootstrap switches
+*
+*  Styles for switch.min.js - checkbox/radio toggle switches
+*
+* ---------------------------------------------------------------------------- */
+.bootstrap-switch {
+  display: inline-block;
+  border: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  /*rtl:begin:ignore*/
+  direction: ltr;
+  text-align: left;
+  /*rtl:end:ignore*/
+  border-radius: 0.1875rem;
+  transition: all ease-in-out 0.15s; }
+  @media screen and (prefers-reduced-motion: reduce) {
+    .bootstrap-switch {
+      transition: none; } }
+  .bootstrap-switch .bootstrap-switch-container {
+    display: inline-block;
+    top: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    border-radius: 0.1875rem; }
+  .bootstrap-switch .bootstrap-switch-handle-on,
+  .bootstrap-switch .bootstrap-switch-handle-off,
+  .bootstrap-switch .bootstrap-switch-label {
+    cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    padding: 0.5rem 1rem; }
+  .bootstrap-switch input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0; }
+
+.form-check-switch {
+  padding: 0; }
+  .form-group.row .form-check-switch {
+    margin-top: 0; }
+
+.form-check-switch-left .bootstrap-switch {
+  margin-right: 0.625rem; }
+
+.form-check-switch-right .bootstrap-switch {
+  margin-left: 0.625rem; }
+
+.bootstrap-switch-focused {
+  outline: 0; }
+
+.bootstrap-switch-disabled .bootstrap-switch-handle-on,
+.bootstrap-switch-disabled .bootstrap-switch-handle-off,
+.bootstrap-switch-disabled .bootstrap-switch-label {
+  cursor: default;
+  opacity: 0.5; }
+
+.bootstrap-switch-readonly .bootstrap-switch-handle-on,
+.bootstrap-switch-readonly .bootstrap-switch-handle-off,
+.bootstrap-switch-readonly .bootstrap-switch-label,
+.bootstrap-switch-indeterminate .bootstrap-switch-handle-on,
+.bootstrap-switch-indeterminate .bootstrap-switch-handle-off,
+.bootstrap-switch-indeterminate .bootstrap-switch-label {
+  cursor: default !important;
+  opacity: 0.5; }
+
+.bootstrap-switch-animate .bootstrap-switch-container {
+  transition: margin 0.15s; }
+  @media screen and (prefers-reduced-motion: reduce) {
+    .bootstrap-switch-animate .bootstrap-switch-container {
+      transition: none; } }
+
+/*rtl:begin:ignore*/
+.bootstrap-switch-inverse .bootstrap-switch-handle-on {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: calc(0.1875rem - 1px);
+  border-bottom-right-radius: calc(0.1875rem - 1px); }
+
+.bootstrap-switch-inverse .bootstrap-switch-handle-off {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: calc(0.1875rem - 1px);
+  border-bottom-left-radius: calc(0.1875rem - 1px); }
+
+.bootstrap-switch-on .bootstrap-switch-label,
+.bootstrap-switch-inverse.bootstrap-switch-off .bootstrap-switch-label {
+  border-top-right-radius: calc(0.1875rem - 1px);
+  border-bottom-right-radius: calc(0.1875rem - 1px); }
+
+.bootstrap-switch-off .bootstrap-switch-label,
+.bootstrap-switch-inverse.bootstrap-switch-on .bootstrap-switch-label {
+  border-top-left-radius: calc(0.1875rem - 1px);
+  border-bottom-left-radius: calc(0.1875rem - 1px); }
+
+/*rtl:end:ignore*/
+.bootstrap-switch-handle-on,
+.bootstrap-switch-handle-off {
+  text-align: center;
+  white-space: nowrap;
+  z-index: 1; }
+
+.bootstrap-switch-default {
+  color: #333;
+  background-color: #eee; }
+
+.bootstrap-switch-primary {
+  color: #fff;
+  background-color: #2196F3; }
+
+.bootstrap-switch-danger {
+  color: #fff;
+  background-color: #F44336; }
+
+.bootstrap-switch-success {
+  color: #fff;
+  background-color: #4CAF50; }
+
+.bootstrap-switch-warning {
+  color: #fff;
+  background-color: #FF7043; }
+
+.bootstrap-switch-info {
+  color: #fff;
+  background-color: #00BCD4; }
+
+/*rtl:begin:ignore*/
+.bootstrap-switch-handle-on {
+  border-top-left-radius: calc(0.1875rem - 1px);
+  border-bottom-left-radius: calc(0.1875rem - 1px); }
+
+.bootstrap-switch-handle-off {
+  border-top-right-radius: calc(0.1875rem - 1px);
+  border-bottom-right-radius: calc(0.1875rem - 1px); }
+
+/*rtl:end:ignore*/
+.bootstrap-switch-label {
+  text-align: center;
+  z-index: 100;
+  background-color: #fff;
+  position: relative;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset;
+  transition: background-color ease-in-out 0.15s; }
+  @media screen and (prefers-reduced-motion: reduce) {
+    .bootstrap-switch-label {
+      transition: none; } }
+  .bootstrap-switch-label:hover, .bootstrap-switch-label:active {
+    background-color: #fafafa; }
+  .bootstrap-switch-label:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0.25rem;
+    height: 0.625rem;
+    margin-top: -0.3125rem;
+    margin-left: -0.125rem;
+    display: inline-block;
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    border-right: 1px solid rgba(0, 0, 0, 0.15); }
+
+.bootstrap-switch-large .bootstrap-switch-handle-on,
+.bootstrap-switch-large .bootstrap-switch-handle-off,
+.bootstrap-switch-large .bootstrap-switch-label {
+  padding: 0.625rem 1.125rem; }
+
+.bootstrap-switch-small .bootstrap-switch-handle-on,
+.bootstrap-switch-small .bootstrap-switch-handle-off,
+.bootstrap-switch-small .bootstrap-switch-label {
+  padding: 0.375rem 0.875rem; }
+
+.form-check-right .bootstrap-switch {
+  margin-right: 0;
+  margin-left: 0.625rem; }
